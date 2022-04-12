@@ -23,6 +23,8 @@ Run
 python3 script5.py <input Video Directory> <Output Video Directory>
 ```
 For example
+The input file is at: ./Inputs/ball.mp4
+You want to output to: ./Outputs/result.mp4
 ```console
 python3 script5.py ./Inputs/ball.mp4 ./Outputs/result.mp4
 ```
