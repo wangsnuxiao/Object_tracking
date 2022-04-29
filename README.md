@@ -13,7 +13,7 @@
     - [set state](#set-state)
     - [update](#update)
   - [Task1: Detect the objects “balls” in the image](#task1-detect-the-objects-balls-in-the-image)
-  - [Task2: Tracking the objects](#task2-tracking-the-objects)
+  - [Task2/Task3: Tracking the objects](#task2task3-tracking-the-objects)
   - [Example Input](#example-input)
   - [Example Output](#example-output)
 
@@ -106,7 +106,7 @@ def __init__(self,center,v) :
 - I use Yolo's pre-trained model to detect the balls in the image, the model detects many types of objects, in fact, the model recognizes the balls as orange! But since it serves the purpose, there is no objection to using it. The object number in the model is 49, so we choose the resulting objects that carry this number ,more details about the model from this link https://github.com/ultralytics/yolov5
 
 
-## Task2: Tracking the objects
+## Task2/Task3: Tracking the objects
 
 - I created an objects of Kalman filter to track the balls, each filter needs an initial state, when the ball objects are first detected, the coordinates are given to each filter and then the tracking process starts, when the positions of the balls are updated the new positions of the filter are assigned based on the distance, the filter whose state is closest The location of the ball object is given to him, and so on
 
